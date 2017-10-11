@@ -21,3 +21,9 @@ else if ( weapon === "gun") {
 else {
 	alert (weapon + " is a fine choice for a weapon! Hooray for " + heroName + "!");
 } 
+
+function randomNumber(range) {
+	return Math.round(Math.random() * range)
+}
+
+alert(randomNumber(3));
