@@ -26,4 +26,18 @@ function randomNumber(range) {
 	return Math.round(Math.random() * range)
 }
 
-alert(randomNumber(3));
++alert("The first thing that " + heroName + " encounters is a raging river!");
+ +
+ +var decision1 = prompt("Does " + heroName + " choose to cross the river?");
+ +
+ +if(decision1 == "y") {
+ +	var chance1 = randomNumber(3);
+ +	if (chance1 < 1){
+ +		alert(heroName + " died crossing the river! You lose!");
+ +	}
+ +	else {
+ +		alert(heroName = " successfully forged the river!"); 
+ +	}
+ +} 
+ +else if(decision1 == "n") {
+ +	alert(heroName + " chose not to forge the river.");
